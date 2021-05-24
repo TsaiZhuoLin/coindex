@@ -7,7 +7,7 @@ program
     .option(
         "--coin <type>",
         "Add specific coin types in CSV format",
-        "BTC,ETH,LTC",
+        "BTC,ETH,LTC,XRP,BCH,MITH,LINK",
     )
     .option("--cur <currency>", "Change the currency", "USD")
     .action(cmd => check.price(cmd))
