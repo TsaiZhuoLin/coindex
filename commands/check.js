@@ -12,7 +12,7 @@ const check = {
             const api = new CryptoAPI(key)
             const priceOutputData = await api.getPriceData(cmd.coin, cmd.cur)
             const getTime = moment().format("YYYY/MM/DD HH:mm:ss")
-            console.log(getTime.green)
+            console.log(colors.brightGreen.underline(getTime))
             console.log(priceOutputData)
         } catch (err) {
             console.error(err.message.red)
